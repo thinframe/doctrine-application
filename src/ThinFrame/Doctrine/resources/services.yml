@@ -1,0 +1,8 @@
+services:
+    thinframe.doctrine.entity_manager_factory:
+        class: 'ThinFrame\Doctrine\EntityManagerFactory'
+
+    thinframe.doctrine.entity_manager:
+        class: 'Doctrine\ORM\EntityManager'
+        factory_service: 'thinframe.doctrine.entity_manager_factory'
+        factory_method: 'createEntityManager'

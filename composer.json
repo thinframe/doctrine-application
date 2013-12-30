@@ -1,0 +1,23 @@
+{
+    "name": "thinframe/doctrine-application",
+    "description": "Doctrine Application for ThinFrame",
+    "require": {
+        "doctrine/common": "@stable",
+        "doctrine/dbal": "@stable",
+        "doctrine/orm": "@stable",
+        "thinframe/applications": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sorin Badea",
+            "email": "sorin.badea91@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    }
+}

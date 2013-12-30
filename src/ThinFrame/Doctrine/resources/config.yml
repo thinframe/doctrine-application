@@ -1,0 +1,34 @@
+doctrine:
+    connections:
+        development:
+            driver: pdo_mysql
+            user: root
+            password: 123456
+            dbname: test
+
+        production:
+            driver: pdo_mysql
+            user: root
+            password: 123456
+            dbname: test
+
+        test:
+            driver: pdo_mysql
+            user: root
+            password: 123456
+            dbname: test
+
+    caching:
+        query: ~
+        result: ~
+        metadata: ~
+        hydration: ~
+
+    memcached:
+        127.0.0.1: 11211
+
+    memcache:
+        host: 127.0.0.1
+        port: 11211
+
+    filters: ~
