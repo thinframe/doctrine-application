@@ -6,3 +6,9 @@ services:
         class: 'Doctrine\ORM\EntityManager'
         factory_service: 'thinframe.doctrine.entity_manager_factory'
         factory_method: 'createEntityManager'
+
+    thinframe.doctrine.listeners.controller:
+        class: 'ThinFrame\Doctrine\Listeners\ControllerListener'
+        arguments: ['@thinframe.doctrine.entity_manager']
+        tags:
+            - {name: 'thinframe.events.listener'}
